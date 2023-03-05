@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- THE MOST IMPORTANT!!!-->
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+<!--onload="addProductItem('really', 'work', 0)"-->
+<body style="background-color: cornsilk">
+<div class="wrapper">
+    <h1>Звёздный рейтинг</h1>
+    <form action="#" class="form form_margin">
+        <div class="rating rating_set"> <!--.rating-->
+            <div class="rating_body">
+                <div class="rating_active"></div>
+                <div class="rating_items">
+                    <input type="radio" class="rating_item" value="1" name="rating">
+                    <input type="radio" class="rating_item" value="2" name="rating">
+                    <input type="radio" class="rating_item" value="3" name="rating">
+                    <input type="radio" class="rating_item" value="4" name="rating">
+                    <input type="radio" class="rating_item" value="5" name="rating">
+                </div>
+            </div>
+            <div class="rating_value">0</div>
+        </div>
+    </form>
+</div>
+
+<script src="../js/js.js"></script>
+<!--ajax-->
+<!--<div data-ajax="true" class="rating rating_set">
+    <div class="rating">
+        <div class="rating_body">
+            <div class="rating_active">
+                <div class="rating_items">
+                    <input type="radio" class="rating_item" value="1" name="rating">
+                    <input type="radio" class="rating_item" value="2" name="rating">
+                    <input type="radio" class="rating_item" value="3" name="rating">
+                    <input type="radio" class="rating_item" value="4" name="rating">
+                    <input type="radio" class="rating_item" value="5" name="rating">
+                </div>
+            </div>
+        </div>
+        <div class="rating_value">3.6</div>
+    </div>
+</div>-->
+<!--<div class="productItem" id="${id}product" style="top: 35vh; left: 30vw">
+    <strong style="display: flex; flex-direction: column;">${name}
+        <b class="productRating" style="display: flex; flex-direction: column; text-align: left">{rating}</b>
+        <label>
+            <button class="deleteBtn">-</button>
+            <button class="addBtn">+</button>
+            <textarea class="productInfo" maxlength="250" readonly>${information}</textarea>
+        </label>
+    </strong>
+</div>-->
+
+
+
+<!--
+--bs-btn-padding-x: 4vw;
+--bs-btn-padding-y: 1vh;
+--bs-btn-font-family: ;
+--bs-btn-font-size: 100%;
+--bs-btn-font-weight: 10%;
+--bs-btn-line-height: 1.5;-->

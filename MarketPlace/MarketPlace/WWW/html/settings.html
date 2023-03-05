@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/pictures/banan.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="../css/personInformation.css">
+    <script src="/js/personInformation.js"></script>
+    <script src="/js/settings.js"></script>
+</head>
+<body class="noselect" onload="GetPersonInformation()" style="background-color: cornsilk">
+<a class="mainTitle" href="/">Freedom</a>
+<div class="personInformation" id="personInformation"></div>
+<div>
+    <div class="settingsName">
+        <input class="settingsInput" id="Pass" placeholder="Last password">
+        <input class="settingsInput" id="NewName" placeholder="New name">
+        <button class="settingsUseBtn" onclick="changeName()" id="singIn">Change name</button>
+    </div>
+    
+    <div class="settingsPass">
+        <input class="settingsInput" id="lastPass" placeholder="Last password">
+        <input class="settingsInput" id="NewPassword" placeholder="New password" type="password">
+        <input class="settingsInput" id="NewPasswordSecond" placeholder=" Repeat password" type="password">
+        <button class="settingsUseBtn" onclick="changePassword()">Change password</button>
+    </div>
+
+    <form action="/leaveAccount">
+    <div class="settingsLeave">
+        <button class="settingsUseBtn">Leave</button>
+    </div>
+    </form>
+</div>
+
+
+
+<!--    <div class="elfsight-app-5a022ceb-7a45-486e-9541-5ad68e5da4d2"></div>-->
+
+<!--
+&#45;&#45;bs-btn-padding-x: 4vw;
+&#45;&#45;bs-btn-padding-y: 1vh;
+&#45;&#45;bs-btn-font-family: ;
+&#45;&#45;bs-btn-font-size: 100%;
+&#45;&#45;bs-btn-font-weight: 10%;
+&#45;&#45;bs-btn-line-height: 1.5;-->

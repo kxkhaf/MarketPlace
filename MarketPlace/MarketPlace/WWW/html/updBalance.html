@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Balance</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/pictures/banan.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/products.css">
+    <link rel="stylesheet" type="text/css" href="../css/personInformation.css">
+    <link rel="stylesheet" type="text/css" href="../css/updBalance.css">
+    <script src="../js/personInformation.js"></script>
+    <script src="../js/updBalance.js"></script>
+    
+<!--<script src="../js/showingRating.js"></script>-->
+</head>
+<!--onload="addProductItem('really', 'work', 0)"-->
+<body onload='getProducts(); GetPersonInformation()' style="background-color: cornsilk">
+
+<a class="mainTitle" href="/">Freedom</a>
+    <div class="personInformation" id="personInformation"></div>
+<button onclick="updBalance(1, 5)" class="addBal" id="addBal1">1⚡ / 5sec</button>
+<button onclick="updBalance(10, 10)" class="addBal" id="addBal2">10⚡ / 10sec</button>
+<button onclick="updBalance(100, 60)" class="addBal" id="addBal3">100⚡ / 60sec</button>
+<!--<div class="productItem" id="${id}product" style="top: 35vh; left: 30vw">
+    <strong style="display: flex; flex-direction: column;">${name}
+        <b class="productRating" style="display: flex; flex-direction: column; text-align: left">{rating}</b>
+        <label>
+            <button class="deleteBtn">-</button>
+            <button class="addBtn">+</button>
+            <textarea class="productInfo" maxlength="250" readonly>${information}</textarea>
+        </label>
+    </strong>
+</div>-->
+
+
+
+<!--
+&#45;&#45;bs-btn-padding-x: 4vw;
+&#45;&#45;bs-btn-padding-y: 1vh;
+&#45;&#45;bs-btn-font-family: ;
+&#45;&#45;bs-btn-font-size: 100%;
+&#45;&#45;bs-btn-font-weight: 10%;
+&#45;&#45;bs-btn-line-height: 1.5;-->

@@ -1,0 +1,97 @@
+.settingsName {
+    z-index: 100;
+    line-height: inherit;
+    position: absolute;
+    color: black;
+    white-space:pre;
+    left: calc(55vw - 25vmax);
+    padding-right: 50vw;
+    margin-right: -40vw;
+    top: calc(10 * (1vh + 1vw));
+    font-size: 2vh;
+}
+
+.settingsPass {
+    margin-top: 5vh;
+    z-index: 100;
+    line-height: inherit;
+    position: absolute;
+    color: black;
+    white-space:pre;
+    left: calc(55vw - 25vmax);
+    padding-right: 50vw;
+    margin-right: -40vw;
+    top: calc(15 * (1vh + 1vw));
+    font-size: 2vh;
+}
+.settingsLeave {
+    z-index: 100;
+    position: absolute;
+    color: black;
+    white-space:pre;
+    font-size: 2vh;
+    margin-top: 5vh;
+    line-height: inherit;
+    left: calc(55vw - 25vmax);
+    padding-right: 50vw;
+    margin-right: -40vw;
+    top: calc(25 * (1vh + 1vw));
+    font-family: Andale Mono, monospace;
+}
+
+.settingsName > .settingsUseBtn {
+    margin-top: calc(0.3 *(1vw + 1vh));
+    line-height: inherit;
+    font-size: inherit;
+    font-family: Andale Mono, monospace;
+}
+
+.settingsPass > .settingsUseBtn {
+    margin-top: calc(0.3 *(1vw + 1vh));
+    line-height: inherit;
+    font-size: inherit;
+    font-family: Andale Mono, monospace;
+}
+
+.settingsLeave > .settingsUseBtn {
+    margin-top: calc(0.3 *(1vw + 1vh));
+    line-height: inherit;
+    font-size: inherit;
+    font-family: Andale Mono, monospace;
+}
+
+.mainTitle:hover
+{
+    color: #fbff00;
+}
+.mainTitle:active
+{
+    color: #ffce1b;
+}
+.mainTitle {
+    position: absolute;
+    color: gold;
+    left: calc(50vw - 22vmax);
+    top: 6vh;
+    text-decoration: none;
+    -webkit-text-stroke:0.05vw black;
+    text-shadow: 0.25vh 0 0.25vw #000,
+    0 0.25vh 0.5vw #000,
+    -0.25vh 0 0.5vw #000,
+    0 -0.25vw 0.25vw #000;
+    font-family: Georgia, serif;
+    font-size: calc(15vmin/2 + 15vmax/8);;
+    line-height: 10vh;
+}
+.settingsInput {
+    font-size: calc(1 * (1vw + 1vh));
+    height: calc(1 * (1vw + 1vh));
+    width: calc(4vw + 3vmin + 8vmax + 2vh);
+    margin-bottom: 0.3vh;
+}
+
+.settingsCollector {
+    z-index: 200;
+    background-size: auto;
+    background-color: #e7ffcc;
+}

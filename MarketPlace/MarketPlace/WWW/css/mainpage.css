@@ -1,0 +1,57 @@
+body {
+    background-size: auto;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.mainTitle:hover
+{
+    color: #fbff00;
+}
+
+.mainTitle {
+    position: absolute;
+    color: gold;
+    left: calc(66vw - 28vmax);
+    top: 6vh;
+    text-decoration: none;
+    -webkit-text-stroke:0.05vw black;
+    text-shadow: 0.25vh 0 0.25vw #000,
+    0 0.25vh 0.5vw #000,
+    -0.25vh 0 0.5vw #000,
+    0 -0.25vw 0.25vw #000;
+    font-family: Georgia, serif;
+    font-size: calc(15vmin/2 + 15vmax/8);;
+    line-height: 10vh;
+}
+
+.products {
+    position: absolute;
+    color: black;
+    left: 7vw;
+    top: 30vh;
+    /*    width: 5vw;
+        height: 5vh;*/
+    /*background-color: black;*/
+    /*outline-color: black;*/
+    /*    text-outline: black 50px 50px;*/
+    /*-webkit-text-stroke:0.1vw darkkhaki;*/
+    /*    -webkit-text-fill-color:transparent;*/
+    outline: burlywood outset 0.15vw;
+    font-family: Righteous, cursive;
+    font-size: 6vh;
+    line-height: 6vh;
+}
+
+/*.input_data {
+    margin-bottom: 0.3vh;
+}*/
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finding</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/pictures/banan.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/css/personInformation.css">
+    <link rel="stylesheet" type="text/css" href="/css/products.css">
+    <link rel="stylesheet" type="text/css" href="../css/filter.css">
+    <link rel="stylesheet" type="text/css" href="../css/starRaitingProducts.css">
+    <script src="../js/personInformation.js"></script>
+    <script src="../js/starRaitingProducts.js"></script>
+    <script src="/js/filteredProducts.js"></script>
+    <script src="/js/filter.js"></script>
+    
+<!--<script src="../js/showingRating.js"></script>-->
+</head>
+<!--onload="addProductItem('really', 'work', 0)"-->
+<body onload='GetPersonInformation()' style="background-color: cornsilk">
+
+<a class="mainTitle" href="/">Freedom</a>
+<div class="personInformation" id="personInformation"></div>
+<div class="productItemCollector" id="productItemCollector"></div>
+<div class="findCollector">
+    <div class="findingInfo">
+        <form action="/ShowFilteredPage" method="post" id="filterForm" onsubmit="event.preventDefault()">
+            <input type="search" class="filterCheckBox findSearch" id="searchElement" placeholder="Product name" name="searchName"></input>
+            <div class="filterCheckBox">
+                <div class="collectorCheckBox">
+                    <label for="checkBoxRating"></label>
+                    <input type="checkbox" onclick="check(0)" class="checkBox" id="checkBoxRating" name="checkRating">
+                        <text style="flex-direction: row;" class="textCheckBox">By rating</text>
+                    </input>
+                    <label for="checkBoxPrice"></label>
+                    <input type="checkbox" onclick="check(1)" class="checkBox" id="checkBoxPrice" name="checkPrice">
+                        <text style="flex-direction: row; " class="textCheckBox">By price</text>
+                    </input>
+                    <div>
+                        <label for="checkBoxDes"></label>
+                        <input type="checkbox" class="checkBox" id="checkBoxDes" name="checkDes">
+                            <text style="flex-direction: row; " class="textCheckBox">Order by descending</text>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <button onclick="GetFilteredProducts()" id="sendFormBtn" class="find btnFind">Send</button>
+        </form>
+        <button onclick="resetFilter()" id="btnReset" class="find">Reset</button>
+    </div>
+</div>
+</body>
+<!--<div class="productItem" id="${id}product" style="top: 35vh; left: 30vw">
+    <strong style="display: flex; flex-direction: column;">${name}
+        <b class="productRating" style="display: flex; flex-direction: column; text-align: left">{rating}</b>
+        <label>
+            <button class="deleteBtn">-</button>
+            <button class="addBtn">+</button>
+            <textarea class="productInfo" maxlength="250" readonly>${information}</textarea>
+        </label>
+    </strong>
+</div>-->
+
+
+
+<!--
+&#45;&#45;bs-btn-padding-x: 4vw;
+&#45;&#45;bs-btn-padding-y: 1vh;
+&#45;&#45;bs-btn-font-family: ;
+&#45;&#45;bs-btn-font-size: 100%;
+&#45;&#45;bs-btn-font-weight: 10%;
+&#45;&#45;bs-btn-line-height: 1.5;-->

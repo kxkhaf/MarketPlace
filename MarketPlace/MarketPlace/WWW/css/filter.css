@@ -1,0 +1,102 @@
+.collectorCheckBox {
+    display: inline-block;
+}
+
+
+.checkBox {
+    height: calc(1 * (1vh + 1vw));
+    width: calc(1 * (1vh + 1vw));
+}
+#checkBoxDes {
+    display: inline-block;
+    margin-top: calc(1 * (1vh + 1vw));
+}
+
+.textCheckBox {
+    font-size: calc(1 * (1vh + 1vw));
+    -webkit-text-stroke: calc(0.01 * (1vh + 1vw)) white;
+}
+
+.find {
+    height: calc(1 * (1vh + 1vw));
+    width: calc(1 * (1vh + 1vw));
+}
+.findingInfo {
+  font-size: calc(1 * (1vh + 1vw));
+}
+
+.findCollector {
+position: absolute;    
+top: calc(10 * (1vh + 1vw));
+left: calc(55vw - 25vmax);
+}
+
+.findSearch {
+    height: calc(2 * (1vh + 1vw));
+    width: calc(15 * (1vh + 1vw));
+    font-size: calc(1 * (1vh + 1vw));
+}
+
+
+#btnReset:hover { background: linear-gradient(#ff6641, #ff0300) ; }
+#btnReset:active { background: linear-gradient(#ff0300, #ff6641) #f59500; }
+
+#btnReset {
+    margin-top: calc(3 * (1vh + 1vw));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    position:  absolute;
+    height: calc(2 * (1vh + 1vw));
+    width: calc(5 * (1vh + 1vw));
+    font-size: calc(1 * (1vh + 1vw));
+    border-color: #ff723d #000 #ff4853;
+    background: linear-gradient(#ff5417, #ff0015) #E38916;
+}
+
+.btnFind:hover { background: linear-gradient(#43ff6a, #00da2f) ; }
+.btnFind:active { background: linear-gradient(#00da2f, #43ff6a) #f59500; }
+
+.btnFind {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    position:  absolute;
+    height: calc(2 * (1vh + 1vw));
+    width: calc(5 * (1vh + 1vw));
+    font-size: calc(1 * (1vh + 1vw));
+    border-color: #00e441 #000 #00ea2c;
+    background: linear-gradient(#00f85a, #2ff800) #5df870;
+}
+body {
+    background-size: auto;
+    overflow: scroll;
+}
+
+.mainTitle:hover
+{
+    color: #fbff00;
+}
+.mainTitle:active
+{
+    color: #ffce1b;
+}
+.mainTitle {
+    position: absolute;
+    color: gold;
+    left: calc(50vw - 22vmax);
+    top: 6vh;
+    text-decoration: none;
+    -webkit-text-stroke:0.05vw black;
+    text-shadow: 0.25vh 0 0.25vw #000,
+    0 0.25vh 0.5vw #000,
+    -0.25vh 0 0.5vw #000,
+    0 -0.25vw 0.25vw #000;
+    font-family: Georgia, serif;
+    font-size: calc(15vmin/2 + 15vmax/8);;
+    line-height: 10vh;
+}

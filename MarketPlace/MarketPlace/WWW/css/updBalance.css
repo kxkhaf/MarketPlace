@@ -1,0 +1,48 @@
+.addBal {
+    position: absolute;
+    -webkit-text-stroke: calc(0.02 * (1vw + 1vw)) black;
+/*    top: calc(10 * (3vh / 2 + 1vmax - 1vmin));*/
+    left: calc(50vw - 20vmax);
+    width: calc(12 * (1vw + 1vw));
+    height: calc(4 * (1vw + 1vw));
+    font-size: calc(0.8 * (1vw + 1vw));
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: calc(0.2 * (1vw + 1vw)) 0;
+    border-style: solid none;
+    border-radius: calc(0.5 * (1vw + 1vw));
+    transition: 0.2s;
+}
+#addBal1:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+#addBal1:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+#addBal1 {
+    top: calc(10 * (1vh + 1vw));
+    border-color: #FDBE33 #000 #D77206;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+}
+
+
+
+#addBal2:hover { background: linear-gradient(#07db00, #07ff00) #00ff11; }
+#addBal2:active { background: linear-gradient(#07ff00, #07db00) #f59500; }
+
+#addBal2 {
+    top: calc(18 * (1vh + 1vw));
+    border-color: #9dff8d #000 #3af600;
+    background: linear-gradient(#28ff53, #39e300) #E38916;
+}
+
+
+
+#addBal3:hover { background: linear-gradient(#954dff, #6a31ff) #f5ae00; }
+#addBal3:active { background: linear-gradient(#6a31ff, #954dff) #f59500; }
+
+#addBal3 {
+    top: calc(26 * (1vh + 1vw));
+    border-color: #b5bcf6 #000 #b185f6;
+    background: linear-gradient(#5446ff, #a300ff) #E38916;
+}

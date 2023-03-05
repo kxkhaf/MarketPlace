@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Page</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="..//pictures/banan.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="../css/imagesMainpage.css">
+    <link rel="stylesheet" type="text/css" href="../css/personInformation.css">
+    <script src="../js/personInformation.js"></script>
+    <script src="../js/mainpage.js"></script>
+    <script src="../js/onSaler3.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script async src="https://cookie-widget.ru/widget.js"></script>
+    <!--    <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
+</head>
+<body class="noselect" onload="GetPersonInformation()" style="background-color: cornsilk">
+<h1 class="mainTitle" style="cursor: url('../pictures/darkCursor.cur') 0 0, pointer;">Freedom</h1>
+<div class="personInformation" id="personInformation"></div>
+<div style="    
+        left: calc(16vmin - 20vmax + 50vw);
+        width: 30vh;
+        position: fixed;
+        top: calc(80vh - 30vmin);">
+
+    <img src="/pictures/salers/saler1.png" class="salesPeople" style="
+        z-index: -13;
+        position: absolute;
+        width: calc(10vmin + 10vmax);
+        left: calc(-3 * (1vmin + 1vmax));;
+        ">
+    
+    <img src="/pictures/salers/Super.png" class="salesPeople" style="
+        z-index: -15;
+        position: absolute;
+        left: calc(2 * (1vmin + 1vmax));
+        width: calc(15vmin + 15vmax);
+        ">
+    
+    <img src="/pictures/salers/saler2.png" class="salesPeople" style="
+        z-index: -14;
+        position: absolute;
+        width: calc(10 * (1vmin + 1vmax));
+        left: calc(12 * (1vmin + 1vmax))
+        ">
+
+
+</div>
+
+<div onmouseenter="moveOpacity()" onmousedown="addCountHeadCheck()" onmouseup="deleteCountHeadCheck()"
+     id="divSelesPeople3" style=" 
+            z-index: 10;
+            cursor: url('../pictures/thanos1.cur') 0 0, pointer;
+            top: 17.5vh;
+            left: calc(8vw - 7vmin + -0.5vmax);
+            margin-left: 2.6vh;
+            height: 13vh;
+            width: 30.3vh;
+            position: fixed;
+            object-fit: cover;
+            ">
+</div>
+<!--    <div onmousedown="ChangeHalmetState()"
+         style="
+         cursor: url('../pictures/thanos1.cur') 0 0, pointer;
+        position: fixed;
+        z-index: 9;
+        height: 7.5vh;
+        margin-left: 15.4vh;
+        top: 16vh;
+        left: 8vw;
+        width: 5vh;
+        object-fit: cover;
+            ">
+    </div>-->
+<img src="/pictures/salers/saler3.png" class="salesPeople"
+     style="
+            position: fixed;
+            z-index: -2;
+            top: 13vh;
+            left: calc(8vw - 7vmin + -0.5vmax);
+            width: 35vh;
+        ">
+<img src="/pictures/salers/saler3v2.png" class="salesPeople" id="backSalesPeople3"
+     style="
+            position: fixed;
+            z-index: -4;
+            top: 13vh;
+            left: calc(8vw - 7vmin + -0.5vmax);
+            width: 35vh;
+            opacity: 0%;
+        ">
+<img src="/pictures/salers/saler3head.png" class="salesPeople" id="backSalesPeople3Head"
+     style="
+        z-index: -1;
+        margin-left: 12.1vh;
+        top: 16vh;
+        left: calc(8vw - 7vmin + -0.5vmax);
+        width: 12vh;
+        opacity: 0%;
+        ">
+
+<button class="products" onclick="redirectProductsNotRegister()">Products</button>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" style="
+        position: absolute;
+        font-size: 4vh;
+        line-height: 4vh;
+        size: initial;
+/*        --bs-dropdown-min-width: 10%;
+        --bs-btn-border-width: 100%;*/
+         left: 7vw; top: 41vh"
+            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+        List
+    </button>
+    <ul class="dropdown-menu" style="
+        --bs-dropdown-min-width: 10vm;
+         left: 8vw; top: 47vh">
+        <li><a class="dropdown-item" style="font-size: 3vh;" href="/products">Shopping</a></li>
+        <li><a class="dropdown-item" style="font-size: 3vh;" href="/myProducts">My Products</a></li>
+        <li><a class="dropdown-item" style="font-size: 3vh;" href="/filter">Find</a></li>
+    </ul>
+</div>
+
+<!--    <div class="elfsight-app-5a022ceb-7a45-486e-9541-5ad68e5da4d2"></div>-->
+
+<!--
+&#45;&#45;bs-btn-padding-x: 4vw;
+&#45;&#45;bs-btn-padding-y: 1vh;
+&#45;&#45;bs-btn-font-family: ;
+&#45;&#45;bs-btn-font-size: 100%;
+&#45;&#45;bs-btn-font-weight: 10%;
+&#45;&#45;bs-btn-line-height: 1.5;-->

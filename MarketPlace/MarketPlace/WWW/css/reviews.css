@@ -1,0 +1,172 @@
+body {
+    background-size: auto;
+    overflow: scroll;
+}
+
+.mainTitle:hover
+{
+    color: #fbff00;
+}
+.mainTitle:active
+{
+    color: #ffce1b;
+}
+.mainTitle {
+    position: absolute;
+    color: gold;
+    left: calc(50vw - 22vmax);
+    top: 6vh;
+    text-decoration: none;
+    -webkit-text-stroke:0.05vw black;
+    text-shadow: 0.25vh 0 0.25vw #000,
+    0 0.25vh 0.5vw #000,
+    -0.25vh 0 0.5vw #000,
+    0 -0.25vw 0.25vw #000;
+    font-family: Georgia, serif;
+    font-size: calc(15vmin/2 + 15vmax/8);;
+    line-height: 10vh;
+}
+.reviewItem {
+    height: calc(17 * (1vmin + 1vmax));
+    width: calc(12 * (1vw + 1vmin + 1vmax));
+    border-radius: calc(1vh + 1vw);
+    border: 0.5vh solid #df0010;
+    background-color: #ff2800;
+    margin-top: calc(8vh);
+    position: absolute;
+    top: calc(10 * (3vh / 2 + 1vmax - 1vmin));
+    left: calc(50vw - 20vmax);
+    /*    left: 10vw;*/
+    font-size: 7vh;
+    /* text-align: center;*/
+}
+.reviewInfo {
+    margin-top: 1vh;
+    border-radius: 1.5vh;
+    border: 0.5vh solid black;
+    font-size: calc((10vmin + 5vmax) * 0.15);
+    text-align: left;
+    position: sticky;
+    resize: none;
+    margin-left: 0.75vw;
+    width: calc(11 * (1vw + 1vmin + 1vmax));
+    height: calc(8 * (1vmin + 1vmax));
+    vertical-align: top;
+    left: 3.5vh;
+    margin-bottom: calc(6vmax - 5vmin);
+    -webkit-text-stroke: calc(0.01 * (1vw + 2vh)) black;
+    font-family: monospace;
+}
+
+.deleteBtn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-size: calc(2 * (1vw + 1vh));
+    position:  absolute;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    width: calc(2 * (1vw + 1vh));
+    height: calc(2 * (1vw + 1vh));
+    top: 0;
+    right: 0;
+    background: #ff1300;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 0.25vw;
+    box-shadow: 0 0.3vw 2vw rgba(0,0,0,.25),
+    inset 0 0.2vw 0 rgba(255,255,255,.6),
+    0 0.2vw 0 rgba(0,0,0,.1),
+    inset 0 0 0.2vw rgba(0,0,0,.1);
+}
+
+.addBtn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-size: calc(2 * (1vw + 1vh));
+    position:  absolute;
+    margin-left: 30vw;
+    width: calc(2 * (1vw + 1vh));
+    height: calc(2 * (1vw + 1vh));
+    top: 0;
+    right: 30%;
+    background: #004fe2;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 0.25vw;
+    box-shadow: 0 0.3vw 2vw rgba(0,0,0,.25),
+    inset 0 0.2vw 0 rgba(255,255,255,.6),
+    0 0.2vw 0 rgba(0,0,0,.1),
+    inset 0 0 0.2vw rgba(0,0,0,.1);
+}
+.makeReview {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-size: calc(2 * (1vw + 1vh));
+    size: calc(2 * (1vw + 1vh));
+    position:  absolute;
+    margin-left: 3vw;
+    width: calc(5 * 0.7 * (1vw + 1vh));
+    height: calc(3 * 0.7 * (1vw + 1vh));
+    top: 0;
+    left: 0;
+    background: #e2cd00;
+    cursor: pointer;
+    border-radius: 35%;
+    border-width: 0.25vw;
+    box-shadow: 0 0.3vw 2vw rgba(0,0,0,.25),
+    inset 0 0.2vw 0 rgba(255,255,255,.6),
+    0 0.2vw 0 rgba(0,0,0,.1),
+    inset 0 0 0.2vw rgba(0,0,0,.1);
+}
+
+.PlusBtn {
+    width: 1.5vw;
+    z-index: 1;
+}
+
+
+.MinusBtn {
+    width: 1.5vw;
+    z-index: 1;
+}
+
+.btnImg {
+    width: 1.5vw;
+    z-index: 1;
+}
+
+.reviewPrice {
+    z-index: 2;
+    /*-webkit-text-stroke: 0.01vw crimson;*/
+    padding-left: 0.35vw;
+    align-items: center;
+    justify-content: center;
+    top: -8vh;
+    right: calc((20vmin - 7vmax) * 0.018);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: -10vw;
+    position: absolute;
+    height: calc(2 * (1vh + 1vw));
+    width: calc((8vmin + 8vmax) * 0.8);
+    font-size: calc((1vw + 2vh));
+    border: 0.5vh solid #00ff1e;
+    background-color: #ff7e00;
+    border-radius: 4vh;
+    min-width: 1vh;
+    -webkit-text-stroke: 0.07vh white;
+    /*    min-height: 0.7vw;
+        max-height: 4vh;*/
+    margin-top: calc(1 * (-2.5vmax + 2.2vmin + 5vh));
+
+}

@@ -1,0 +1,107 @@
+body {
+    background-size: auto;
+    overflow: scroll;
+}
+
+.mainTitle:hover
+{
+    color: #fbff00;
+}
+.mainTitle:active
+{
+    color: #ffce1b;
+}
+.mainTitle {
+    position: absolute;
+    color: gold;
+    left: calc(50vw - 22vmax);
+    top: 6vh;
+    text-decoration: none;
+    -webkit-text-stroke:0.05vw black;
+    text-shadow: 0.25vh 0 0.25vw #000,
+    0 0.25vh 0.5vw #000,
+    -0.25vh 0 0.5vw #000,
+    0 -0.25vw 0.25vw #000;
+    font-family: Georgia, serif;
+    font-size: calc(15vmin/2 + 15vmax/8);;
+    line-height: 10vh;
+}
+.productItem{
+    height: calc(17 * (1vmin + 1vmax));
+    width: calc(12 * (1vw + 1vmin + 1vmax));
+    border-radius: calc(1vh + 1vw);
+    border: 0.5vh solid #00ff1e;
+    background-color: #7bff71;
+    margin-top: calc(8vh);
+    position: absolute;
+    top: calc(10 * (3vh / 2 + 1vmax - 1vmin));
+    left: calc(50vw - 20vmax);
+    font-size: 7vh;
+}
+.productInfo{
+    overflow: scroll;
+    margin-top: 1vh;
+    border-radius: 1.5vh;
+    border: 0.5vh solid black;
+    font-size: calc((10vmin + 5vmax) * 0.15);
+    text-align: left;
+    position: relative;
+    resize: none;
+    margin-left: 0.75vw;
+    width: calc(11 * (1vw + 1vmin + 1vmax));
+    height: calc(13 * (1vmin + 1vmax));
+    vertical-align: top;
+    top: 15%;
+    margin-bottom: calc(6vmax - 5vmin);
+    -webkit-text-stroke: calc(0.01 * (1vw + 2vh)) black;
+    font-family: monospace;
+}
+
+.buyButton {
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: calc(0.05 * (1vw + 1vh)) gold;
+    position: relative;
+    top: 10%;
+    font-size: 50%;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: #ff0a00;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 2px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+            0 0 3px rgba(0,0,0,0) inset,
+            0 1px 1px 1px rgba(255,255,255,.2),
+            0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+}
+.buyButton:hover:not(:active) {
+    box-shadow:
+            0 0 3px rgba(0,0,0,0) inset,
+            0 1px 1px 1px rgba(0,255,255,.5),
+            0 -1px 1px 1px rgba(0,255,255,.5);
+}
+.buyButton:active {
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
+    box-shadow:
+            0 0 3px rgba(0,0,0,.5) inset,
+            0 1px 1px 1px rgba(255,255,255,.4),
+            0 -1px 1px 1px rgba(0,0,0,.1);
+}
+
+#loadingElement {
+    position: absolute;
+    top: calc(15 * (3vh / 2 + 1vmax - 1vmin));
+    left: calc(1.2 * (50vw - 20vmax));
+    height: calc(10 * (1vh + 1vw));
+    width: calc(10 * (1vh + 1vw));
+}

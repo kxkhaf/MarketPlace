@@ -1,0 +1,5 @@
+.salesPeople {
+    pointer-events: none;
+    position: fixed;
+    object-fit: cover;
+}

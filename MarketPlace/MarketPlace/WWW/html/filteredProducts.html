@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/pictures/banan.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/products.css">
+    <link rel="stylesheet" type="text/css" href="../css/starRaitingProducts.css">
+    <link rel="stylesheet" type="text/css" href="../css/personInformation.css">
+    <script src="../js/personInformation.js"></script>
+    <script src="../js/filteredProducts.js"></script>
+    <script src="../js/starRaitingProducts.js"></script>
+    
+<!--<script src="../js/showingRating.js"></script>-->
+</head>
+<!--onload="addProductItem('really', 'work', 0)"-->
+<body onload='GetFilteredProducts(); GetPersonInformation();' style="background-color: cornsilk">
+<text id="errorBlock"></text>
+<a class="mainTitle" href="/">Freedom</a>
+<div class="personInformation" id="personInformation"></div>
+<div class="productItemCollector" id="productItemCollector"></div>
+
+<!--<div class="productItem" id="${id}product" style="top: 35vh; left: 30vw">
+    <strong style="display: flex; flex-direction: column;">${name}
+        <b class="productRating" style="display: flex; flex-direction: column; text-align: left">{rating}</b>
+        <label>
+            <button class="deleteBtn">-</button>
+            <button class="addBtn">+</button>
+            <textarea class="productInfo" maxlength="250" readonly>${information}</textarea>
+        </label>
+    </strong>
+</div>-->
+
+
+
+<!--
+&#45;&#45;bs-btn-padding-x: 4vw;
+&#45;&#45;bs-btn-padding-y: 1vh;
+&#45;&#45;bs-btn-font-family: ;
+&#45;&#45;bs-btn-font-size: 100%;
+&#45;&#45;bs-btn-font-weight: 10%;
+&#45;&#45;bs-btn-line-height: 1.5;-->
