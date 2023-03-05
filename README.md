@@ -1,49 +1,51 @@
 # Marketplace HTTP Server
 
-Lightweight HTTP server for marketplace application built with .NET and raw `HttpListener`. No frameworks, pure performance.
+Lightweight HTTP server for marketplace application built with .NET and raw `HttpListener`. Pure vanilla stack - no frameworks on either frontend or backend.
 
 ## Features
 
+- **Full vanilla stack**: No frameworks on backend (.NET HttpListener) or frontend (raw HTML/JS/CSS)
 - Handles 20+ API endpoints
 - Session management with cookies
 - SQL Server database integration
-- Static file serving
+- Static file serving for HTML/CSS/JS assets
 - Concurrent request processing
 
 ## Core Technologies
 
-- `.NET 6`
-- `HttpListener` (raw HTTP server)
+### Backend
+- `.NET 6` with raw `HttpListener`
 - `Microsoft.Data.SqlClient` (SQL Server access)
 - Async/await pattern
+
+### Frontend
+- Pure HTML5 (no templating engines)
+- Vanilla JavaScript (no React/Vue/Angular)
+- Raw CSS (no Bootstrap/Tailwind)
+- Classic DOM manipulation
 
 ## Endpoints
 
 ### Public Routes
 | Path | Description |
 |------|-------------|
-| `/` | Home page |
+| `/` | Serves index.html |
 | `/register` | User registration |
 | `/signIn` | User authentication |
+| `/main.css` | Raw CSS styles |
+| `/app.js` | Vanilla JS frontend |
 
 ### Authenticated Routes
 | Path | Description |
 |------|-------------|
-| `/products` | Product listings |
-| `/myProducts` | User's products |
-| `/balancePage` | Balance management |
-| `/buyProductsPage` | Purchase interface |
+| `/products` | Product listings (returns HTML) |
+| `/myProducts` | User's products (JSON API) |
+| `/balancePage` | Serves balance.html |
 
-## Getting Started
-
-1. **Prerequisites**:
-   - SQL Server with `MyDataBase` schema
-   - .NET 6 SDK
-
-2. **Configuration**:
-   ```csharp
-   // Update connection string
-   SqlConnection connection = new(@"Data source=YOUR_SERVER;Initial Catalog=MyDataBase;Integrated Security=True");
-   
-   // Set listening port
-   listener.Prefixes.Add("http://localhost:1111/");
+## Frontend Structure
+```plaintext
+/static
+   ├── index.html    # Pure HTML
+   ├── products.html # No templating
+   ├── main.css      # Framework-free styles
+   └── app.js        # Vanilla ES6 JavaScript
